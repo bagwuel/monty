@@ -14,6 +14,7 @@ instruct_func  get_command_function(char *command)
 	instruction_t instruct[] = {
 		{"push", push},
 		{"pall", pall},
+		{"pint", pint},
 		{NULL, NULL},
 	};
 	while (instruct[i].f != NULL && strcmp(instruct[i].opcode, command) != 0)
